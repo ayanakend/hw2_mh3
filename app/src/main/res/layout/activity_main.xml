@@ -41,22 +41,26 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:id="@+id/AC"
                 style="@style/grayDButton"
                 android:text="AC" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:layout_marginHorizontal="16dp"
                 style="@style/grayDButton"
                 android:textSize="26dp"
                 android:text="+/-" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:layout_marginEnd="16dp"
                 style="@style/grayDButton"
                 android:text="%" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:id="@+id/delit"
                 style="@style/orangeButton"
                 android:text="/" />
@@ -71,23 +75,27 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/seven"
                 style="@style/grayDButton"
                 android:text="7" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/eight"
+                android:onClick="onNumberClick"
                 android:layout_marginHorizontal="16dp"
                 style="@style/grayDButton"
                 android:text="8" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/nine"
                 android:layout_marginEnd="16dp"
                 style="@style/grayDButton"
                 android:text="9" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:id="@+id/multipli"
                 style="@style/orangeButton"
                 android:text="*" />
@@ -102,23 +110,27 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/four"
                 style="@style/grayDButton"
                 android:text="4" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/five"
                 android:layout_marginHorizontal="16dp"
                 style="@style/grayDButton"
                 android:text="5" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/six"
                 android:layout_marginEnd="16dp"
                 style="@style/grayDButton"
                 android:text="6" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:id="@+id/minus"
                 style="@style/orangeButton"
                 android:text="-" />
@@ -133,29 +145,34 @@
             app:layout_constraintBottom_toBottomOf="parent">
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/one"
                 style="@style/grayDButton"
                 android:text="1" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:layout_marginHorizontal="16dp"
                 android:id="@+id/two"
                 style="@style/grayDButton"
                 android:text="2" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/three"
                 android:layout_marginEnd="16dp"
                 style="@style/grayDButton"
                 android:text="3" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:id="@+id/plus"
                 style="@style/orangeButton"
                 android:text="+" />
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingHorizontal="8dp"
@@ -163,18 +180,21 @@
             android:weightSum="4">
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onNumberClick"
                 android:id="@+id/zero"
                 style="@style/grayDButton"
                 android:layout_weight="4"
                 android:text="0" />
 
             <com.google.android.material.button.MaterialButton
+                android:onClick="onOperationClick"
                 android:layout_marginHorizontal="16dp"
                 style="@style/grayDButton"
                 android:text="." />
 
             <com.google.android.material.button.MaterialButton
-                android:layout_marginEnd="16dp"
+                android:onClick="onOperationClick"
+                android:layout_marginEnd="14dp"
                 android:id="@+id/ravna"
                 style="@style/orangeButton"
                 android:text="=" />
