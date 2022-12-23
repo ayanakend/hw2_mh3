@@ -25,8 +25,11 @@ public class FirstFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        editTextTime = requireActivity().findViewById(R.id.editText);
-        button_one = requireActivity().findViewById(R.id.btn);
+        findView();
+        setClickListeners();
+    }
+
+    private void setClickListeners() {
         button_one.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -41,5 +44,10 @@ public class FirstFragment extends Fragment {
                 }
             }
         });
+    }
+
+    void findView () {
+        editTextTime = requireActivity().findViewById(R.id.editText);
+        button_one = requireActivity().findViewById(R.id.btn);
     }
 }
