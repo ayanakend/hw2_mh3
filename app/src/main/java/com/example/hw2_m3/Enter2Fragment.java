@@ -11,7 +11,7 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.hw2_m3.databinding.FragmentFirst2Binding;
 
-public class First2Fragment extends Fragment {
+public class Enter2Fragment extends Fragment {
 
     private FragmentFirst2Binding binding;
 
@@ -32,7 +32,7 @@ public class First2Fragment extends Fragment {
         binding.buttonFirst.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(First2Fragment.this)
+                NavHostFragment.findNavController(Enter2Fragment.this)
                         .navigate(R.id.action_First2Fragment_to_Second2Fragment);
             }
         });
