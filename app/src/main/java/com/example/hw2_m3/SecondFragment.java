@@ -29,8 +29,11 @@ public class SecondFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        textView = requireActivity().findViewById(R.id.textView);
-        imageView = requireActivity().findViewById(R.id.imageView);
+        findView();
+        setClickListener();
+    }
+
+    private void setClickListener() {
         if (getArguments() != null){
             textView.setText(getArguments().getString("012"));
         }
@@ -40,6 +43,11 @@ public class SecondFragment extends Fragment {
                 imageChooser();
             }
         });
+    }
+
+    private void findView() {
+        textView = requireActivity().findViewById(R.id.textView);
+        imageView = requireActivity().findViewById(R.id.imageView);
     }
 
     void imageChooser() {
