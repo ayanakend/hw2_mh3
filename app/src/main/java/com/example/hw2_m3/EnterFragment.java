@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class FirstFragment extends Fragment {
+public class EnterFragment extends Fragment {
 
     EditText editTextTime;
     Button button_one;
@@ -38,7 +38,7 @@ public class FirstFragment extends Fragment {
 
                 } else {
                     bundle.putString("012", editTextTime.getText().toString());
-                    SecondFragment fragment = new SecondFragment();
+                    FinalFragment fragment = new FinalFragment();
                     fragment.setArguments(bundle);
                     requireActivity().getSupportFragmentManager().beginTransaction().replace(R.id.container,fragment).addToBackStack("").commit();
                 }

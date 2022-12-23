@@ -16,7 +16,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 
-public class SecondFragment extends Fragment {
+public class FinalFragment extends Fragment {
     TextView textView;
     ImageView imageView;
     int CHOOSE_PICTURE = 250;
