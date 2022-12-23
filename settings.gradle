@@ -12,6 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "hw_7_m2"
+rootProject.name = "hw2_m3"
 include ':app'
 include ':app'
